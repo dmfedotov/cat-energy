@@ -66,11 +66,13 @@ gulp.task('style', function () {
         return {title: "Style", message: err.message};
       })
     }))
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(csso())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sourcemaps.write())
     .pipe(rename({
       suffix: '.min'
     }))

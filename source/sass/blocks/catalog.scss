@@ -1,0 +1,20 @@
+.catalog__item {
+  list-style-type: none;
+
+  &--additional .catalog__description {
+    font-size: 12px;
+    font-family: $secondary-font;
+  }
+}
+
+.catalog__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.catalog__list-row {
+  font-size: 12px;
+  font-family: $secondary-font;
+}
