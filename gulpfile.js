@@ -156,7 +156,7 @@ gulp.task('copy', function  () {
     paths.fonts.src,
     paths.images.src,
   ], {
-    base: paths.root
+    base: "source"
   })
   .pipe(gulp.dest(paths.root));
 });
