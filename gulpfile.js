@@ -39,7 +39,7 @@ const paths = {
   },
   fonts: {
     src: 'source/fonts/**/*.{woff,woff2}',
-    dest: 'docs/assets/fonts/'
+    dest: 'docs/fonts/'
   }
 };
 
@@ -66,11 +66,13 @@ gulp.task('style', function () {
         return {title: "Style", message: err.message};
       })
     }))
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(csso())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(sourcemaps.write())
     .pipe(rename({
       suffix: '.min'
     }))
@@ -130,7 +132,7 @@ gulp.task('clean', function () {
 // Запуск сервера
 gulp.task('server', function () {
   browserSync.init({
-    server: 'source/',
+    server: 'docs',
     ui: false,
     cors: true
   });
@@ -156,9 +158,9 @@ gulp.task('copy', function  () {
     paths.fonts.src,
     paths.images.src,
   ], {
-    base: paths.root
+    base: "source"
   })
-  .pipe(gulp.dest('docs'));
+  .pipe(gulp.dest(paths.root));
 });
 
 // Сборка проекта
