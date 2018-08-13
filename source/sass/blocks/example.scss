@@ -2,7 +2,16 @@
   background: $color-gray;
 }
 
+.example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
 .example__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 1.6;

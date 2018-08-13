@@ -1,4 +1,13 @@
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
 .contacts__slogan {
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -7,6 +16,8 @@
 }
 
 .contacts__address {
+  margin: 0;
+
   line-height: 1.4;
   font-family: $secondary-font;
 }

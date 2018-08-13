@@ -1,5 +1,24 @@
+.categories__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.categories__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
 .categories__item {
+  margin-bottom: 20px;
+  padding: 20px;
+
   background: $color-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .categories__title {

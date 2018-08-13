@@ -1,7 +1,19 @@
+.promo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
 .promo__title {
+  width: 250px;
+  margin: 0 auto 25px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
+  text-align: center;
   // color: #ffffff;
 }
 
@@ -9,4 +21,8 @@
   line-height: 1;
   // color: #ffffff;
   text-transform: uppercase;
+}
+
+.promo__button {
+  margin-bottom: 22px;
 }

@@ -1,5 +1,14 @@
-.main-nav__item {
-  list-style: none;
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .main-nav__link {
