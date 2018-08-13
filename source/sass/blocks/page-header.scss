@@ -7,8 +7,16 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    width: 768px;
+    width: $tablet-width;
     padding-right: 30px;
     padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }

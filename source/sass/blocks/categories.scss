@@ -1,6 +1,8 @@
 .categories__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .categories__list {
@@ -43,8 +45,25 @@
 
 @media (min-width: $tablet-width) {
   .categories__wrapper {
-    width: 768px;
+    width: $tablet-width;
     padding-right: 30px;
     padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__wrapper {
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 570px;
   }
 }

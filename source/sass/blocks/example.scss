@@ -6,6 +6,8 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .example__title {
@@ -42,8 +44,22 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
-    width: 768px;
+    width: $tablet-width;
     padding-right: 30px;
     padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .example__inner {
+    width: 570px;
+    margin-right: 40px;
   }
 }
