@@ -2,3 +2,14 @@
   line-height: 1.14;
   font-family: $secondary-font;
 }
+
+@media (min-width: $desktop-width) {
+  .field-actions {
+    display: flex;
+  }
+
+  .field-actions__button {
+    width: 570px;
+    margin-right: 80px;
+  }
+}
