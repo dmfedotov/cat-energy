@@ -21,3 +21,11 @@
   line-height: 1.4;
   font-family: $secondary-font;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

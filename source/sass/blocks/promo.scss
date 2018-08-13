@@ -26,3 +26,11 @@
 .promo__button {
   margin-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 768px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}

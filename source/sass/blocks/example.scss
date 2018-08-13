@@ -39,3 +39,11 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

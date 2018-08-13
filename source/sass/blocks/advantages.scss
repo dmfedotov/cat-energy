@@ -24,3 +24,11 @@
 .advantages__description {
   font-family: $secondary-font;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
