@@ -13,3 +13,14 @@
 
   border: 1px solid #fafafa;
 }
+
+@media (min-width: $desktop-width) {
+  .field-text--email {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  .field-text--telephone {
+    width: 570px;
+  }
+}

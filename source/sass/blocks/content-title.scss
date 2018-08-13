@@ -1,6 +1,16 @@
 .content-title {
+  margin: 0;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 1.6;
   color: #000000;
+}
+
+.content-title--catalog {
+  margin-bottom: 30px;
+}
+
+.content-title--form {
+  margin-bottom: 30px;
 }

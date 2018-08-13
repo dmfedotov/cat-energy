@@ -4,7 +4,10 @@
 @import "fonts";
 @import "settings";
 
+@import "blocks/wrapper";
+@import "blocks/page-header";
 @import "blocks/main-nav";
+@import "blocks/page-main";
 @import "blocks/promo";
 @import "blocks/button";
 @import "blocks/categories";
@@ -16,10 +19,12 @@
 @import "blocks/content-title";
 @import "blocks/catalog";
 @import "blocks/extra";
-@import "blocks/gift";
 @import "blocks/pick-programm";
 @import "blocks/form";
 @import "blocks/field-text";
 @import "blocks/field-radio";
 @import "blocks/field-checkbox";
+@import "blocks/field-textarea";
 @import "blocks/field-actions";
+@import "blocks/page-footer";
+@import "blocks/social";

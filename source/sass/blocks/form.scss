@@ -1,5 +1,17 @@
 .form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   border: none;
+}
+
+.form__fieldset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .form__legend {
@@ -9,6 +21,39 @@
   color: #000000;
 }
 
-.form__fieldset-field {
-  list-style-type: none;
+@media (min-width: $desktop-width) {
+  .form__content-wrapper {
+    display: flex;
+  }
+
+  .form__fieldset--info {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  .form__fieldset--purpose {
+    width: 570px;
+  }
+
+  .form__fieldset--contacts {
+    .form__fieldset-list {
+      display: flex;
+    }
+  }
+
+  .form__fieldset--additional {
+    .form__fieldset-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .form__fieldset-field {
+      width: 245px;
+      margin-right: 80px;
+
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+  }
 }

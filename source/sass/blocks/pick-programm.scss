@@ -1,3 +1,41 @@
+.pick-programm__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.pick-programm__header {
+  margin-bottom: 38px;
+  padding-top: 28px;
+}
+
 .pick-programm__slogan {
+  margin: 0;
+
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .pick-programm__wrapper {
+    width: $tablet-width;
+    padding-right: 30px;
+    padding-bottom: 72px;
+    padding-left: 30px;
+  }
+
+  .pick-programm__slogan {
+    width: 340px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pick-programm__wrapper {
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-bottom: 82px;
+    padding-left: 40px;
+  }
 }

@@ -1,4 +1,15 @@
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+}
+
 .contacts__slogan {
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -7,6 +18,24 @@
 }
 
 .contacts__address {
+  margin: 0;
+
   line-height: 1.4;
   font-family: $secondary-font;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
