@@ -8,6 +8,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: none;
+  }
+
   .page-header__wrapper {
     width: $tablet-width;
     padding-right: 30px;
