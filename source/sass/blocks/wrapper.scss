@@ -3,3 +3,27 @@
   flex-direction: column;
   min-height: 100%;
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      width: 50%;
+      height: 696px;
+
+      background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat center top;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/index-background-mobile@2x.jpg");
+        background-size: 305px auto;
+      }
+    }
+  }
+}

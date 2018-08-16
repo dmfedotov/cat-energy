@@ -54,15 +54,64 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo::before {
+    display: none;
+  }
+
   .promo__wrapper {
+    position: relative;
+
     width: $tablet-width;
     padding-right: 120px;
+    padding-bottom: 530px;
     padding-left: 120px;
+  }
+
+  .promo__title {
+    width: 427px;
+    margin-left: 0;
+
+    font-size: 60px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .promo__slogan {
+    margin-bottom: 45px;
+
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .promo__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  .promo__button {
+    width: 245px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    position: static;
+  }
+
   .promo__wrapper {
     width: $desktop-width;
+    margin-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 230px;
   }
 }
