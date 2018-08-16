@@ -1,4 +1,6 @@
 .page-header {
+  padding-top: 15px;
+
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -9,6 +11,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    padding-bottom: 15px;
+
     border-bottom: none;
   }
 
