@@ -1,0 +1,28 @@
+.logo--header {
+  .logo__image {
+    width: 33px;
+    height: 38px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo--header {
+    .logo__image {
+      width: 173px;
+      height: 58px;
+    }
+
+    .logo__title {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo--header {
+    .logo__image {
+      width: 202px;
+      height: 59px;
+    }
+  }
+}
