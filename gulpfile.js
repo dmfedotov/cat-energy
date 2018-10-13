@@ -169,9 +169,9 @@ gulp.task('build', gulp.series(
   'uglify',
   'copy',
   'images',
-  // 'webpImage',
+  'webpImage',
   'style',
-  // 'sprite',
+  'sprite',
   'html',
   'uncss'
 ));
