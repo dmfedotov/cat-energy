@@ -13,3 +13,9 @@
   font-family: $secondary-font;
   color: $color-font;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+  }
+}
