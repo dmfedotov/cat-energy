@@ -22,11 +22,7 @@
   &--additional {
     display: flex;
     flex-direction: column;
-
-    .catalog__picture {
-      margin-right: auto;
-      margin-left: auto;
-    }
+    align-items: center;
 
     .catalog__title {
       max-width: initial;
@@ -36,10 +32,16 @@
 
     .catalog__description {
       width: auto;
+      margin-top: 0;
+      margin-bottom: 20px;
 
       font-size: 12px;
       font-family: $secondary-font;
       text-align: center;
+    }
+
+    .catalog__button {
+      width: 100%;
     }
   }
 }
@@ -59,6 +61,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .catalog__list {
@@ -83,20 +86,111 @@
 
   .catalog__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .catalog__item {
+    position: relative;
+
     width: 324px;
     margin-right: 60px;
+    margin-bottom: 140px;
+    padding-top: 162px;
+    padding-bottom: 40px;
+
+    background: $color-gray;
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
 
     &:nth-of-type(2n) {
       margin-right: 0;
     }
+  }
 
-    &--additional {
-      padding-top: 123px;
+  .catalog__item--additional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+
+    background: #ffffff;
+    border: 1px solid #dedede;
+
+    .catalog__picture {
+      width: 60px;
+      height: 60px;
+
+      fill: #dedede;
     }
+
+    .catalog__title {
+      max-width: 140px;
+
+      text-align: center;
+    }
+
+    .catalog__description {
+      max-width: 180px;
+
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .catalog__button {
+      margin-top: auto;
+    }
+  }
+
+  .catalog__picture {
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  .catalog__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .catalog__title {
+    max-width: 135px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .catalog__list {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
+  .catalog__list tbody {
+    width: 100%;
+  }
+
+  .catalog__list-row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 16px;
+    line-height: 1;
+
+    border-bottom: 1px solid #dedede;
   }
 }
 

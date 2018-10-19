@@ -18,3 +18,14 @@
 .content-title--form {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .content-title--catalog {
+    margin-bottom: 146px;
+
+    font-size: 60px;
+    line-height: 1;
+
+    border-bottom: none;
+  }
+}
