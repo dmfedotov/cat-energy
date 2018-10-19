@@ -71,16 +71,26 @@
                 <div class="form__fieldset-wrapper">
                   <ul class="form__fieldset-list">
                     <li class="form__fieldset-field field-radio">
-                      <input type="radio" name="objective" id="losing-weight" class="field-radio__input">
-                      <label for="losing-weight" class="field-radio__label">Похудение</label>
+                      <label for="losing-weight" class="field-radio__label">
+                        <input class="field-radio__input  visually-hidden" type="radio" name="objective" id="losing-weight"
+                          checked>
+                        <span class="field-radio__fake"></span>
+                        <span class="field-radio__value">Похудение</span>
+                      </label>
                     </li>
                     <li class="form__fieldset-field field-radio">
-                      <input type="radio" name="objective" id="get-mass" class="field-radio__input">
-                      <label for="get-mass" class="field-radio__label">Набор массы</label>
+                      <label for="get-mass" class="field-radio__label">
+                        <input class="field-radio__input  visually-hidden" type="radio" name="objective" id="get-mass">
+                        <span class="field-radio__fake"></span>
+                        <span class="field-radio__value">Набор массы</span>
+                      </label>
                     </li>
                     <li class="form__fieldset-field field-radio">
-                      <input type="radio" name="objective" id="need-advice" class="field-radio__input">
-                      <label for="need-advice" class="field-radio__label">Не знаю (Нужен ваш совет)</label>
+                      <label for="need-advice" class="field-radio__label">
+                        <input class="field-radio__input  visually-hidden" type="radio" name="objective" id="need-advice">
+                        <span class="field-radio__fake"></span>
+                        <span class="field-radio__value">Не знаю (Нужен ваш совет)</span>
+                      </label>
                     </li>
                   </ul>
                 </div>
@@ -93,12 +103,16 @@
                   <li class="form__fieldset-field  field-text--email">
                     <label class="field-text__label" for="email">E-mail</label>
                     <input class="field-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-                    <svg class="field-text__input-icon" width="17" height="15"></svg>
+                    <svg class="field-text__input-icon  field-text__input-icon--mail" width="17" height="13">
+                      <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
                   </li>
                   <li class="form__fieldset-field  field-text--telephone">
                     <label class="field-text__label" for="telephone">Телефон</label>
                     <input class="field-text__input" type="tel" name="telephone" id="telephone" placeholder="8 (960) 900-60-90">
-                    <svg class="field-text__input-icon" width="17" height="15"></svg>
+                    <svg class="field-text__input-icon  field-text__input-icon--phone" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
@@ -106,28 +120,57 @@
             <fieldset class="form__fieldset  form__fieldset--comments">
               <h2 class="form__legend">Комментарий</h2>
               <div class="form__fieldset-wrapper  field-text  field-text--textarea">
-                <textarea class="field-text__input" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="field-text__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--additional">
               <h2 class="form__legend">Дополнительно</h2>
               <div class="form__fieldset-wrapper">
                 <ul class="form__fieldset-list">
-                  <li class="form__fieldset-field field-checkbox">
-                    <input type="checkbox" name="sugar" id="sugar" class="field-checkbox__input">
-                    <label for="sugar" class="field-checkbox__label">Сахарозаменитель</label>
+                  <li class="form__fieldset-field  field-checkbox">
+                    <label for="sugar" class="field-checkbox__label">
+                      <input type="checkbox" name="sugar" id="sugar" class="field-checkbox__input  visually-hidden"
+                        checked>
+                      <span class="field-checkbox__fake">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </span>
+                      <span class="field-checkbox__value">Сахарозаменитель</span>
+                    </label>
                   </li>
-                  <li class="form__fieldset-field field-checkbox">
-                    <input type="checkbox" name="water" id="water" class="field-checkbox__input">
-                    <label for="water" class="field-checkbox__label">Питьевая вода</label>
+                  <li class="form__fieldset-field  field-checkbox">
+                    <label for="water" class="field-checkbox__label">
+                      <input type="checkbox" name="water" id="water" class="field-checkbox__input  visually-hidden">
+                      <span class="field-checkbox__fake">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </span>
+                      <span class="field-checkbox__value">Питьевая вода</span>
+                    </label>
                   </li>
-                  <li class="form__fieldset-field field-checkbox">
-                    <input type="checkbox" name="milk" id="milk" class="field-checkbox__input">
-                    <label for="milk" class="field-checkbox__label">Молоко</label>
+                  <li class="form__fieldset-field  field-checkbox">
+                    <label for="milk" class="field-checkbox__label">
+                      <input type="checkbox" name="milk" id="milk" class="field-checkbox__input  visually-hidden">
+                      <span class="field-checkbox__fake">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </span>
+                      <span class="field-checkbox__value">Молоко</span>
+                    </label>
                   </li>
-                  <li class="form__fieldset-field field-checkbox">
-                    <input type="checkbox" name="vitamins" id="vitamins" class="field-checkbox__input">
-                    <label for="vitamins" class="field-checkbox__label">Витамины</label>
+                  <li class="form__fieldset-field  field-checkbox">
+                    <label for="vitamins" class="field-checkbox__label">
+                      <input type="checkbox" name="vitamins" id="vitamins" class="field-checkbox__input  visually-hidden">
+                      <span class="field-checkbox__fake">
+                        <svg class="field-checkbox__icon" width="21" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
+                      </span>
+                      <span class="field-checkbox__value">Витамины</span>
+                    </label>
                   </li>
                 </ul>
               </div>
@@ -141,16 +184,14 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__inner">
-            <h2 class="contacts__slogan">приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</p>
             <p class="contacts__address">
               ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
             </p>
           </div>
         </div>
         <div class="contacts__map">
-          <div class="map">
-            <img src="http://placehold.it/320x362" alt="">
-          </div>
+          <div class="map"></div>
         </div>
       </section>
   </div>
