@@ -163,6 +163,11 @@
     line-height: 1;
   }
 
+  .extra__inner {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   .extra__price {
     margin-left: 52px;
   }
@@ -199,19 +204,72 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extra {
+    padding-top: 75px;
+  }
+
   .extra__wrapper {
     display: flex;
+    flex-wrap: wrap;
     width: $desktop-width;
     padding-right: 40px;
+    padding-bottom: 86px;
     padding-left: 40px;
+  }
+
+  .extra__title {
+    width: 100%;
   }
 
   .extra__list {
     width: 895px;
     margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .extra__item {
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .extra__name {
+    width: 236px;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .extra__inner {
+    width: 285px;
+    margin-bottom: 0;
+  }
+
+  .extra__button {
+    width: 245px;
+    margin-left: 40px;
   }
 
   .extra__gift {
+    flex-direction: column;
     width: 245px;
+    padding-bottom: 48px;
+
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
+
+  .extra__gift-picture {
+    margin-bottom: 63px;
+    margin-left: 0;
+  }
+
+  .extra__gift-slogan {
+    margin-left: 0;
+
+    text-align: center;
   }
 }
