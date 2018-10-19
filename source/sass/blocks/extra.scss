@@ -33,6 +33,10 @@
   padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
+
+  &:first-of-type {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .extra__name {
@@ -42,9 +46,12 @@
   font-weight: 400;
   font-size: 16px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .extra__inner {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 14px;
 
@@ -52,13 +59,40 @@
   font-family: $secondary-font;
 }
 
+.extra__gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  min-height: 290px;
+  padding-top: 65px;
+  padding-bottom: 20px;
+
+  background: #70b447 url("../../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+}
+
+.extra__gift-picture {
+  width: 55px;
+  height: 60px;
+  margin-bottom: 63px;
+
+  fill: #ffffff;
+}
+
 .extra__gift-slogan {
+  max-width: 165px;
   margin: 0;
 
   font-size: 16px;
   line-height: 1.25;
   font-family: $secondary-font;
-  // color: #ffffff;
+  text-align: center;
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
