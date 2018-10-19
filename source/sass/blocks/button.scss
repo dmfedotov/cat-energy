@@ -12,3 +12,9 @@
   border: none;
   outline: none;
 }
+
+.button--gray {
+  color: $color-font;
+
+  background: $color-gray;
+}
