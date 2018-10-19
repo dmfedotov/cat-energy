@@ -31,6 +31,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts--gray {
+    background: $color-gray;
+  }
+
   .contacts__wrapper {
     width: $tablet-width;
     padding-top: 66px;

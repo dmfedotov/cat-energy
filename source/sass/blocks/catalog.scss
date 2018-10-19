@@ -64,12 +64,12 @@
   text-transform: uppercase;
 }
 
-.catalog__list {
+.catalog__table {
   display: flex;
   flex-direction: column;
 }
 
-.catalog__list-row {
+.catalog__table-row {
   display: flex;
   justify-content: space-between;
 
@@ -88,6 +88,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .catalog__item {
@@ -174,16 +175,16 @@
     text-align: center;
   }
 
-  .catalog__list {
+  .catalog__table {
     width: 100%;
     margin-bottom: 33px;
   }
 
-  .catalog__list tbody {
+  .catalog__table tbody {
     width: 100%;
   }
 
-  .catalog__list-row {
+  .catalog__table-row {
     padding-top: 5px;
     padding-bottom: 5px;
 
