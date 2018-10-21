@@ -18,6 +18,24 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .field-actions {
+    display: flex;
+    align-items: center;
+    width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .field-actions__button {
+    width: 284px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .field-actions {
     display: flex;

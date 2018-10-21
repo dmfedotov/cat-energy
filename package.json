@@ -16,7 +16,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.1",
@@ -45,7 +45,6 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {

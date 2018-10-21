@@ -38,12 +38,72 @@
     content: "";
 
     flex-grow: 1;
-    min-width: 77px;
+    min-width: 20px;
     height: 3px;
     margin-top: 14px;
     margin-left: 22px;
 
     background: $color-accent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__content-wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__fieldset {
+    width: auto;
+    margin-bottom: 72px;
+    padding: 0;
+
+    &--info,
+    &--purpose {
+      border-bottom: none;
+    }
+
+    &--purpose {
+      width: 630px;
+      padding: 24px 27px;
+
+      border: 1px solid #dedede;
+    }
+
+    &--contacts,
+    &--comments,
+    &--additional {
+      width: 708px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  .form__fieldset--additional {
+    margin-bottom: 54px;
+
+    .form__fieldset-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form__legend {
+    margin-bottom: 67px;
+
+    font-size: 36px;
+
+    &::after {
+      margin-top: 23px;
+    }
+
+    br {
+      display: none;
+    }
   }
 }
 

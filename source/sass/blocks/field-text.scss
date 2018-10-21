@@ -77,6 +77,35 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .field-text,
+  .field-text--email {
+    margin-bottom: 20px;
+  }
+
+  .field-text__label,
+  .field-text__input {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .field-text__input {
+    padding: 14px 19px;
+  }
+
+  .field-text__input-icon {
+    &--mail {
+      top: 25px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 20px;
+      right: 16px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .field-text--email {
     width: 570px;
