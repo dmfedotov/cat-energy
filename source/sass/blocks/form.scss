@@ -1,10 +1,20 @@
 .form__fieldset {
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
 
   border: none;
+
+  &--info {
+    padding-top: 0;
+    padding-bottom: 23px;
+
+    border-bottom: 1px solid #ededed;
+  }
+
+  &--purpose {
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .form__fieldset-list {
@@ -15,15 +25,93 @@
 }
 
 .form__legend {
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #000000;
+
+  &::after {
+    content: "";
+
+    flex-grow: 1;
+    min-width: 20px;
+    height: 3px;
+    margin-top: 14px;
+    margin-left: 22px;
+
+    background: $color-accent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__content-wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__fieldset {
+    width: auto;
+    margin-bottom: 72px;
+    padding: 0;
+
+    &--info,
+    &--purpose {
+      border-bottom: none;
+    }
+
+    &--purpose {
+      width: 630px;
+      padding: 24px 27px;
+
+      border: 1px solid #dedede;
+    }
+
+    &--contacts,
+    &--comments,
+    &--additional {
+      width: 708px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  .form__fieldset--additional {
+    margin-bottom: 54px;
+
+    .form__fieldset-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form__legend {
+    margin-bottom: 67px;
+
+    font-size: 36px;
+
+    &::after {
+      margin-top: 23px;
+    }
+
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .form__content-wrapper {
     display: flex;
+    width: auto;
+    padding: 0;
   }
 
   .form__fieldset--info {
@@ -36,24 +124,26 @@
   }
 
   .form__fieldset--contacts {
+    width: auto;
+    padding: 0;
+
     .form__fieldset-list {
       display: flex;
     }
   }
 
+  .form__fieldset--comments {
+    width: auto;
+    padding: 0;
+  }
+
   .form__fieldset--additional {
+    width: auto;
+    padding: 0;
+
     .form__fieldset-list {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    .form__fieldset-field {
-      width: 245px;
-      margin-right: 80px;
-
-      &:nth-of-type(4n) {
-        margin-right: 0;
-      }
     }
   }
 }

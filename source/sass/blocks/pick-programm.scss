@@ -1,33 +1,48 @@
 .pick-programm__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding-right: 20px;
   padding-bottom: 30px;
-  padding-left: 20px;
 }
 
 .pick-programm__header {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 38px;
   padding-top: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .pick-programm__slogan {
   margin: 0;
 
+  font-size: 14px;
+  line-height: 1.29;
   color: #000000;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .pick-programm__wrapper {
     width: $tablet-width;
+    margin: 0 auto;
     padding-right: 30px;
     padding-bottom: 72px;
     padding-left: 30px;
   }
 
+  .pick-programm__header {
+    width: 708px;
+    margin: 0;
+    margin-bottom: 66px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .pick-programm__slogan {
-    width: 340px;
+    width: 380px;
     padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
@@ -37,5 +52,9 @@
     padding-right: 40px;
     padding-bottom: 82px;
     padding-left: 40px;
+  }
+
+  .pick-programm__slogan {
+    padding-left: 0;
   }
 }

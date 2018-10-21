@@ -1,11 +1,51 @@
+.field-actions {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.field-actions__button {
+  width: 100%;
+  margin-bottom: 22px;
+}
+
 .field-actions__text {
+  margin: 0;
+
   line-height: 1.14;
   font-family: $secondary-font;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .field-actions {
+    display: flex;
+    align-items: center;
+    width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .field-actions__button {
+    width: 284px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .field-actions__text {
+    font-size: 16px;
+    line-height: 1;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .field-actions {
     display: flex;
+    width: auto;
+    padding: 0;
   }
 
   .field-actions__button {

@@ -1,4 +1,9 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+
   text-decoration: none;
 }
 
@@ -7,4 +12,10 @@
   line-height: 1;
   font-family: $secondary-font;
   color: $color-font;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+  }
 }

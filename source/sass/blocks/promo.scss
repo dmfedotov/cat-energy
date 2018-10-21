@@ -14,8 +14,8 @@
     background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat center top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-mobile@2x.jpg");
-      background-size: 305px auto;
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
     }
   }
 }
@@ -93,6 +93,9 @@
   }
 
   .promo__button {
+    position: relative;
+    z-index: 10;
+
     width: 245px;
     margin: 0;
     padding-top: 15px;
@@ -113,5 +116,12 @@
     margin-bottom: 80px;
     padding-top: 100px;
     padding-bottom: 230px;
+  }
+
+  .promo__image {
+    bottom: 70px;
+    left: 492px;
+
+    transform: none;
   }
 }
