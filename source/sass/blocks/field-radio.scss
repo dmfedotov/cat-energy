@@ -54,6 +54,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .field-radio__fake {
+    width: 40px;
+    height: 40px;
+  }
+
+  .field-radio__input:checked + .field-radio__fake::before {
+    width: 18px;
+    height: 18px;
+  }
+
   .field-radio__value {
     font-size: 20px;
     line-height: 1;

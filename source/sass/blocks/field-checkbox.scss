@@ -65,7 +65,31 @@
     }
   }
 
+  .field-checkbox__fake {
+    width: 40px;
+    height: 40px;
+  }
+
   .field-checkbox__value {
     font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-checkbox {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-of-type(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 32px;
+    }
   }
 }

@@ -110,6 +110,8 @@
 @media (min-width: $desktop-width) {
   .form__content-wrapper {
     display: flex;
+    width: auto;
+    padding: 0;
   }
 
   .form__fieldset--info {
@@ -122,24 +124,26 @@
   }
 
   .form__fieldset--contacts {
+    width: auto;
+    padding: 0;
+
     .form__fieldset-list {
       display: flex;
     }
   }
 
+  .form__fieldset--comments {
+    width: auto;
+    padding: 0;
+  }
+
   .form__fieldset--additional {
+    width: auto;
+    padding: 0;
+
     .form__fieldset-list {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    .form__fieldset-field {
-      width: 245px;
-      margin-right: 80px;
-
-      &:nth-of-type(4n) {
-        margin-right: 0;
-      }
     }
   }
 }
