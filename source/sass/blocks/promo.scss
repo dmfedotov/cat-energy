@@ -21,8 +21,6 @@
 }
 
 .promo__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding-top: 37px;
   padding-right: 20px;
   padding-left: 20px;
@@ -49,6 +47,10 @@
   text-transform: uppercase;
 }
 
+.promo__image {
+  margin: 0 auto;
+}
+
 .promo__button {
   margin-bottom: 22px;
 }
@@ -61,7 +63,6 @@
   .promo__wrapper {
     position: relative;
 
-    width: $tablet-width;
     padding-right: 120px;
     padding-bottom: 530px;
     padding-left: 120px;
@@ -113,7 +114,9 @@
 
   .promo__wrapper {
     width: $desktop-width;
+    margin-right: auto;
     margin-bottom: 80px;
+    margin-left: auto;
     padding-top: 100px;
     padding-bottom: 230px;
   }
