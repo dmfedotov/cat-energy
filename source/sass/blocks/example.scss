@@ -5,8 +5,6 @@
 }
 
 .example__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding-top: 30px;
   padding-top: 20px;
   padding-right: 20px;
@@ -59,7 +57,7 @@
 
   justify-content: center;
   align-items: center;
-  width: 124px;
+  width: 44.29%;
   margin-bottom: 35px;
   padding: 14px;
 
@@ -94,7 +92,6 @@
 }
 
 .example__result-name {
-  font-size: 12px;
   line-height: 1;
   font-family: $secondary-font;
 }
@@ -125,7 +122,6 @@
   }
 
   .example__wrapper {
-    width: $tablet-width;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -134,6 +130,15 @@
     margin-bottom: 80px;
   }
 
+  .example__slider {
+    margin-right: -30px;
+    margin-left: -30px;
+    padding-bottom: 0;
+
+    background-image: linear-gradient(to right, $color-gray 50%, #eaeaea 50%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 
   .example__title {
     margin-bottom: 50px;
@@ -153,7 +158,7 @@
   }
 
   .example__result--cell {
-    width: 162px;
+    width: 22.88%;
     margin-right: 42px;
     margin-bottom: 0;
     padding-top: 18px;
@@ -190,27 +195,20 @@
       text-align: right;
     }
   }
-
-  .example__slider {
-    margin-right: -30px;
-    margin-left: -30px;
-    padding-bottom: 0;
-
-    background: $color-gray;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
     background-image: linear-gradient(
-      to bottom, #fff 190px, transparent 190px),
-      linear-gradient(to right, $color-gray 50%, #eaeaea 50%);
+    to bottom, #ffffff 190px, transparent 190px),
+    linear-gradient(to right, $color-gray 50%, #eaeaea 50%);
   }
 
   .example__wrapper {
     display: flex;
     justify-content: space-between;
     width: $desktop-width;
+    margin: 0 auto;
     padding-top: 0;
     padding-right: 40px;
     padding-left: 40px;
@@ -228,6 +226,10 @@
   .example__text {
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .example__result--cell {
+    width: 162px;
   }
 
   .example__slider {

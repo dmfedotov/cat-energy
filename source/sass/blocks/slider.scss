@@ -10,6 +10,7 @@
 }
 
 .slider__picture {
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -62,9 +63,14 @@
     background-size: 100% 462px;
   }
 
+  .slider__list {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .slider__item {
     min-height: 514px;
-    padding-bottom: 100px;
+    padding-bottom: 115px;
 
 
     &--before {
@@ -84,7 +90,7 @@
   .slider__picture {
     max-width: 690px;
     margin: 0;
-    margin-left: 46px;
+    margin-left: 16px;
   }
 
   .slider__controls {
@@ -162,7 +168,7 @@
   }
 
   .slider__controls {
-    padding-left: 44px;
     width: 610px;
+    padding-left: 44px;
   }
 }
