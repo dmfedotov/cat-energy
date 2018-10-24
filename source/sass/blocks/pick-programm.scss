@@ -20,18 +20,14 @@
 
 @media (min-width: $tablet-width) {
   .pick-programm__wrapper {
-    width: $tablet-width;
-    padding-right: 30px;
     padding-bottom: 72px;
-    padding-left: 30px;
   }
 
   .pick-programm__header {
-    width: 708px;
     margin: 0;
     margin-bottom: 66px;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .pick-programm__slogan {
@@ -45,11 +41,14 @@
 
 @media (min-width: $desktop-width) {
   .pick-programm__wrapper {
-    width: $desktop-width;
+    padding-bottom: 82px;
+  }
+
+  .pick-programm__header {
+    max-width: $desktop-width;
     margin-right: auto;
     margin-left: auto;
     padding-right: 40px;
-    padding-bottom: 82px;
     padding-left: 40px;
   }
 
