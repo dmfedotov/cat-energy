@@ -3,8 +3,6 @@
 }
 
 .pick-programm__header {
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 38px;
   padding-top: 28px;
   padding-right: 20px;
@@ -23,7 +21,6 @@
 @media (min-width: $tablet-width) {
   .pick-programm__wrapper {
     width: $tablet-width;
-    margin: 0 auto;
     padding-right: 30px;
     padding-bottom: 72px;
     padding-left: 30px;
@@ -49,6 +46,8 @@
 @media (min-width: $desktop-width) {
   .pick-programm__wrapper {
     width: $desktop-width;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 40px;
     padding-bottom: 82px;
     padding-left: 40px;
