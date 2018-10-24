@@ -46,14 +46,14 @@
   }
 
   .contacts__slogan {
-    max-width: 155px;
+    width: 155px;
 
     font-size: 20px;
     line-height: 1.25;
   }
 
   .contacts__address {
-    max-width: 155px;
+    width: 155px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -68,14 +68,23 @@
 
   .contacts__wrapper {
     position: absolute;
-    top: 94px;
-    left: 110px;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
 
+    padding-top: 95px;
+    padding-bottom: 95px;
+    padding-left: calc((100% - 1300px) / 2 + 40px);
+  }
+
+  .contacts__inner {
     width: 570px;
-    margin: 0 auto;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 68px 77px;
 
-    background: #ffffff;
+    background-color: #ffffff;
+  }
+
+  .contacts__slogan {
+    padding-right: 0;
   }
 }
