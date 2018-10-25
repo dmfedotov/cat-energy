@@ -1,6 +1,4 @@
 .categories__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -102,7 +100,6 @@
 
 @media (min-width: $tablet-width) {
   .categories__wrapper {
-    width: $tablet-width;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -168,6 +165,7 @@
 @media (min-width: $desktop-width) {
   .categories__wrapper {
     width: $desktop-width;
+    margin: 0 auto;
     padding-right: 40px;
     padding-left: 40px;
   }
