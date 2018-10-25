@@ -6,9 +6,29 @@
   }
 }
 
+.field-checkbox__input:checked + .field-checkbox__fake .field-checkbox__icon {
+  width: 21px;
+  height: 16px;
+}
+
+.field-checkbox__input:checked + .field-checkbox__fake,
+.field-checkbox__input:checked + .field-checkbox__fake + .field-checkbox__value {
+  opacity: 0.3;
+}
+
 .field-checkbox__label {
   display: flex;
   align-items: center;
+
+  cursor: pointer;
+
+  transition: all ease 0.1s;
+
+  &:hover {
+    .field-checkbox__fake {
+      border-color: #bababa;
+    }
+  }
 }
 
 .field-checkbox__fake {
@@ -20,7 +40,7 @@
   height: 30px;
   margin-right: 16px;
 
-  border: 1px solid #cecece;
+  border: 1px solid #cdcdcd;
 }
 
 .field-checkbox__value {
@@ -43,11 +63,6 @@
   transition: width 0.3s, height 0.3s;
 
   fill: $color-accent;
-}
-
-.field-checkbox__input:checked + .field-checkbox__fake .field-checkbox__icon {
-  width: 21px;
-  height: 16px;
 }
 
 @media (min-width: $tablet-width) {

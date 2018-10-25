@@ -118,6 +118,7 @@
     font-size: 18px;
     line-height: 1.4;
 
+
     &--active {
       position: relative;
 
@@ -131,6 +132,18 @@
 
         background: $color-accent;
       }
+    }
+  }
+
+  .main-nav__link[href] {
+    transition: opacity ease 0.1s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

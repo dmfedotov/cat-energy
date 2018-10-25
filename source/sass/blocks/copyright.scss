@@ -13,8 +13,28 @@
   color: $color-font;
 }
 
+.copyright__icon {
+  display: block;
+
+  transition: all ease 0.3s;
+
+  fill: #666666;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: 162px;
+
+    transition: all ease 0.1s;
+
+    &:hover {
+      .copyright__icon {
+        fill: $color-accent;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
