@@ -60,7 +60,24 @@
   line-height: 1.12;
   text-transform: uppercase;
 
-  border: 1px solid #dedede;
+  border: 1px solid #e6e6e6;
+  outline: none;
+
+  transition: all ease 0.3s;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-width: 1px;
+    border-color: #444444;
+    box-shadow: 0 0 0 1px inset #444444;
+  }
+
+  &:focus + .field-text__input-icon {
+    fill: $color-accent;
+  }
 }
 
 .field-text__input-icon {

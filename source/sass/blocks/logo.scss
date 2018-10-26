@@ -1,5 +1,4 @@
 .logo--header {
-
   .logo__image {
     width: 33px;
     height: 38px;
@@ -21,6 +20,15 @@
 
 @media (min-width: $tablet-width) {
   .logo--header {
+    transition: opacity ease 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
 
     .logo__image {
       width: 173px;
@@ -31,11 +39,18 @@
       display: none;
     }
   }
+
+  .logo--footer {
+    transition: opacity ease 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .logo--header {
-
     .logo__image {
       width: 202px;
       height: 59px;

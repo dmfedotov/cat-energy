@@ -233,10 +233,7 @@
     width: 100%;
     padding: 0 calc((100% - 1300px) / 2);
 
-    background-image: linear-gradient(to bottom, transparent 22px,
-     $color-accent 22px,
-     $color-accent 25px,
-     transparent 25px);
+    background-image: linear-gradient(to bottom, transparent 22px, $color-accent 22px, $color-accent 25px, transparent 25px);
 
     span {
       padding-right: 40px;

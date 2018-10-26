@@ -12,9 +12,9 @@
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav  main-nav--closed">
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <div class="main-nav__wrapper">
-            <a class="main-nav__logo  logo  logo--header">
+            <a class="main-nav__logo  logo  logo--header" href="index.html">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -24,14 +24,14 @@
               <img class="main-nav__logo-title  logo__title" src="img/logo-mobile-header.svg" width="101" height="18">
               <button class="main-nav__toggle" type="button">Открыть меню</button>
             </a>
-            <ul class="main-nav__list  site-list">
-              <li class="main-nav__item  site-list__item">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
               </li>
-              <li class="main-nav__item  site-list__item">
+              <li class="main-nav__item">
                 <a class="main-nav__link  main-nav__link--active">Каталог продукции</a>
               </li>
-              <li class="main-nav__item  site-list__item">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Подбор программы</a>
               </li>
             </ul>
@@ -55,7 +55,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
+                <a class="catalog__title" href="catalog-item-1.html">Cat Energy PRO 500 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -85,7 +85,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
+                <a class="catalog__title" href="catalog-item-2.html">Cat Energy PRO 1000 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -115,7 +115,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy PRO 500 г</h3>
+                <a class="catalog__title" href="catalog-item-3.html">Cat Energy PRO 500 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -145,7 +145,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy PRO 1000 г</h3>
+                <a class="catalog__title" href="catalog-item-4.html">Cat Energy PRO 1000 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -175,7 +175,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
+                <a class="catalog__title" href="catalog-item-5.html">Cat Energy Slim 500 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -205,7 +205,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy Slim 1000 г</h3>
+                <a class="catalog__title" href="catalog-item-6.html">Cat Energy Slim 1000 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -235,7 +235,7 @@
                 </picture>
               </a>
               <div class="catalog__description">
-                <h3 class="catalog__title">Cat Energy Slim 500 г</h3>
+                <a class="catalog__title" href="catalog-item-7.html">Cat Energy Slim 500 г</a>
                 <table class="catalog__table">
                   <tbody>
                     <tr class="catalog__table-row">
@@ -340,7 +340,7 @@
             <a href="" class="social__link">
               <span class="visually-hidden">Мы в контакте</span>
               <svg class="social__icon  social__icon--vkontakte" width="30" height="15">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
               </svg>
             </a>
           </li>
@@ -348,7 +348,7 @@
             <a href="" class="social__link">
               <span class="visually-hidden">Мы в инстаграме</span>
               <svg class="social__icon  social__icon--instagram" width="23" height="23">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
               </svg>
             </a>
           </li>
@@ -356,14 +356,16 @@
             <a href="" class="social__link">
               <span class="visually-hidden">Мы в фейсбуке</span>
               <svg class="social__icon  social__icon--facebook" width="13" height="27">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright  copyright" href="#">
+        <a class="page-footer__copyright  copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <img class="copyright__icon" src="img/logo-htmlacademy.svg" width="27" height="34">
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </footer>
