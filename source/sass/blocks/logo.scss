@@ -7,6 +7,8 @@
   .logo__title {
     width: 101px;
     height: 18px;
+    margin-right: calc((100% - 320px)/2 + 77px);
+    margin-left: auto;
   }
 }
 
