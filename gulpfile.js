@@ -103,7 +103,7 @@ gulp.task('images', function () {
 
 // Формирование изображений в формате webp
 gulp.task('webpImage', function () {
-  return gulp.src('source/img*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(paths.images.dest));
 });
