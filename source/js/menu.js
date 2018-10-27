@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
   var menu = document.querySelector('.main-nav');
   var toggleButton = menu.querySelector('.main-nav__toggle');
