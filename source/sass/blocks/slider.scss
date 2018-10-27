@@ -37,6 +37,8 @@
 }
 
 .slider__controls-bar {
+  position: relative;
+
   display: flex;
   align-items: center;
   width: 85px;
@@ -49,11 +51,15 @@
 }
 
 .slider__controls-toggle {
+  position: absolute;
+  left: 27%;
+
   width: 35px;
   height: 6px;
 
   background: $color-accent;
   border-radius: 6px;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
@@ -134,7 +140,7 @@
   }
 
   .slider__controls-toggle {
-    position: relative;
+    left: 50%;
 
     width: 34px;
     height: 34px;
@@ -143,9 +149,9 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+    cursor: move;
 
-    transition: all ease 0.1s;
+    transition: box-shadow ease 0.1s, border ease 0.1s;
 
     &:hover {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
