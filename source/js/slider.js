@@ -24,17 +24,17 @@
   };
 
   var setPictureWidth = function (value) {
-    sliderPicture.style.width = value + '%';
+    sliderPicture.style.width = PictureWidth.MAX - value + '%';
   };
 
   var changePicture = function (direction) {
     // Если ширина устройства меньше планшета
     if (window.innerWidth < TABLET_WIDTH) {
       if (direction < 0) {
-        setPictureWidth(PictureWidth.MAX);
+        setPictureWidth(PictureWidth.MIN);
         sliderPin.style.left = PinValue.MOBILE_MIN + '%';
       } else {
-        setPictureWidth(PictureWidth.MIN);
+        setPictureWidth(PictureWidth.MAX);
         sliderPin.style.left = PinValue.MOBILE_MAX + '%';
       }
     } else { // Если ширина устройства от планштеа и выше
